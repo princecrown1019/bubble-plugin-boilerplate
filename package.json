@@ -1,0 +1,59 @@
+{
+  "name": "@digital-engine/bubble-plugin-boilerplate",
+  "version": "1.0.3",
+  "description": "Javascript Minimal Starter Kit for bubble.io plugins",
+  "scripts": {
+    "test": "jest",
+    "trypublish": "npm publish || true",
+    "release": "npm version patch -m 'Release v%s'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digital-engine-info/bubble-plugin-boilerplate"
+  },
+  "author": "Florian Briand <contact@digital-engine.info> (https://github.com/nabellaleen)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digital-engine-info/bubble-plugin-boilerplate/issues"
+  },
+  "homepage": "https://github.com/digital-engine-info/bubble-plugin-boilerplate",
+  "keywords": [
+    "plugin",
+    "starter",
+    "es6",
+    "nocode",
+    "bubble.io"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.12",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-minify": "^0.5.0",
+    "css-loader": "^5.2.0",
+    "eslint": "^7.23.0",
+    "file-loader": "^6.2.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "prettier-webpack-plugin": "^1.2.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "4.0.0-beta.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/scripts/testMock.js",
+      "\\.(css|less)$": "<rootDir>/scripts/testMock.js",
+      "^~src(.*)$": "<rootDir>/src$1"
+    }
+  },
+  "dependencies": {
+    "@digital-engine/bubble-plugin-helpers": "^1.0.4"
+  }
+}
